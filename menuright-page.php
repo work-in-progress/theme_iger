@@ -32,7 +32,7 @@ get_header(); ?>
 
 			</div><!-- #content -->
 			<div id="right_container" class="column_menu">
-				<?php  dynamic_sidebar( 'non-blog-side-bar-widget-area' ) ?> 
+				<?php  dynamic_sidebar( 'non-blog-side-bar-widget-area' )  ?> 
 			</div>
 			<div style="clear:both;"></div>
 				

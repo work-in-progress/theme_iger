@@ -8,9 +8,11 @@
  * @package WordPress
  * @subpackage Twenty_Ten
  * @since Twenty Ten 1.0
+ * 	
  */
 ?>
-	</div><!-- #main -->
+
+</div><!-- #main -->
 
 	<div id="footer1" role="contentinfo">
 	
