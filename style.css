@@ -119,6 +119,25 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 }
 
 
+.has_right_bar #content {
+	margin: 0 auto;
+	width: 528px;
+	margin-right:0px;
+	background-color:green;
+	clear:left;
+	float:left;
+}
+
+.has_right_bar .column_menu {
+	margin: 0;
+	width: 200px;
+	float:right;
+	clear:right;
+	background-color:red;
+}
+
+
+
 /* =Fonts
 -------------------------------------------------------------- */
 body,
