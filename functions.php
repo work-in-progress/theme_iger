@@ -204,6 +204,8 @@ function twentyten_admin_header_style() {
 endif;
 
 get_template_part('widgets');
+get_template_part('widget-finduson');
+
 
 /**
  * Makes some changes to the <title> tag, by filtering the output of wp_title().
