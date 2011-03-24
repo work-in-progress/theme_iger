@@ -59,25 +59,34 @@ class FindUsOn_Widget extends WP_Widget {
 
 		/* Our variables from the widget settings. */
 		$title = apply_filters('widget_title', $instance['title'] );
-		$name = $instance['name'];
-		$sex = $instance['sex'];
-		$show_sex = isset( $instance['show_sex'] ) ? $instance['show_sex'] : false;
+		$facebook_link = $instance['facebook_link'];
+		$twitter_link = $instance['twitter_link'];
+		$linkedin_link = $instance['linkedin_link'];
+		$youtube_link = $instance['youtube_link'];
+		
 
 		/* Before widget (defined by themes). */
 		echo $before_widget;
 
 		/* Display the widget title if one was input (before and after defined by themes). */
-		if ( $title )
+		/* if ( $title )
 			echo $before_title . $title . $after_title;
-
+		*/
+		
+		printf('<div class=\'finduson_socialbox\'><span class=\'finduson_caption\'>' . $title . '</span>');
 		/* Display name from widget settings if one was input. */
-		if ( $name )
-			printf( '<p>' . __('Hello. My name is %1$s.', 'example') . '</p>', $name );
+		if ( $facebook_link )
+				printf( '<a id=\'socialbuttonfacebook\' href=\'%1$s\'  target=\'_blank\'>Facebook</a>', $facebook_link );
+		if ( $twitter_link )
+				printf( '<a id=\'socialbuttontwitter\' href=\'%1$s\'  target=\'_blank\'>Twitter</a>', $twitter_link );
+		if ( $linkedin_link )
+				printf( '<a id=\'socialbuttonlinkedin\' href=\'%1$s\'  target=\'_blank\'>LinkedIn</a>', $linkedin_link );
+		if ( $youtube_link )
+				printf( '<a id=\'socialbuttonyoutube\' href=\'%1$s\'  target=\'_blank\'>YouTube</a>', $youtube_link );
+		
+		/*	printf( '<p>' . __('Hello. My name is %1$s.', 'example') . '</p>', $facebook_link ); */
 
-		/* If show sex was selected, display the user's sex. */
-		if ( $show_sex )
-			printf( '<p>' . __('I am a %1$s.', 'example.') . '</p>', $sex );
-
+		printf('</div>');
 		/* After widget (defined by themes). */
 		echo $after_widget;
 	}
@@ -90,11 +99,10 @@ class FindUsOn_Widget extends WP_Widget {
 
 		/* Strip tags for title and name to remove HTML (important for text inputs). */
 		$instance['title'] = strip_tags( $new_instance['title'] );
-		$instance['name'] = strip_tags( $new_instance['name'] );
-
-		/* No need to strip tags for sex and show_sex. */
-		$instance['sex'] = $new_instance['sex'];
-		$instance['show_sex'] = $new_instance['show_sex'];
+		$instance['facebook_link'] = strip_tags( $new_instance['facebook_link'] );
+		$instance['twitter_link'] = strip_tags( $new_instance['twitter_link'] );
+		$instance['linkedin_link'] = strip_tags( $new_instance['linkedin_link'] );
+		$instance['youtube_link'] = strip_tags( $new_instance['youtube_link'] );
 
 		return $instance;
 	}
@@ -107,7 +115,7 @@ class FindUsOn_Widget extends WP_Widget {
 	function form( $instance ) {
 
 		/* Set up some default widget settings. */
-		$defaults = array( 'title' => __('Example', 'example'), 'name' => __('John Doe', 'example'), 'sex' => 'male', 'show_sex' => true );
+		$defaults = array( 'title' => __('Find Us On', 'finduson'), 'facebook_link' => __('', 'finduson'), 'twitter_link' => __('', 'finduson') , 'linkedin_link' => __('', 'finduson'), 'youtube_link' => __('', 'finduson'));
 		$instance = wp_parse_args( (array) $instance, $defaults ); ?>
 
 		<!-- Widget Title: Text Input -->
@@ -116,26 +124,28 @@ class FindUsOn_Widget extends WP_Widget {
 			<input id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" style="width:100%;" />
 		</p>
 
-		<!-- Your Name: Text Input -->
+		<!-- Facebook: Text Input -->
 		<p>
-			<label for="<?php echo $this->get_field_id( 'name' ); ?>"><?php _e('Your Name:', 'example'); ?></label>
-			<input id="<?php echo $this->get_field_id( 'name' ); ?>" name="<?php echo $this->get_field_name( 'name' ); ?>" value="<?php echo $instance['name']; ?>" style="width:100%;" />
+			<label for="<?php echo $this->get_field_id( 'facebook_link' ); ?>"><?php _e('Facebook:', 'finduson'); ?></label>
+			<input id="<?php echo $this->get_field_id( 'facebook_link' ); ?>" name="<?php echo $this->get_field_name( 'facebook_link' ); ?>" value="<?php echo $instance['facebook_link']; ?>" style="width:100%;" />
+		</p>
+		<!-- Twitter: Text Input -->
+		<p>
+			<label for="<?php echo $this->get_field_id( 'twitter_link' ); ?>"><?php _e('Twitter:', 'finduson'); ?></label>
+			<input id="<?php echo $this->get_field_id( 'twitter_link' ); ?>" name="<?php echo $this->get_field_name( 'twitter_link' ); ?>" value="<?php echo $instance['twitter_link']; ?>" style="width:100%;" />
+		</p>
+		<!-- LinkedIN: Text Input -->
+		<p>
+			<label for="<?php echo $this->get_field_id( 'linkedin_link' ); ?>"><?php _e('LinkedIn:', 'finduson'); ?></label>
+			<input id="<?php echo $this->get_field_id( 'linkedin_link' ); ?>" name="<?php echo $this->get_field_name( 'linkedin_link' ); ?>" value="<?php echo $instance['linkedin_link']; ?>" style="width:100%;" />
+		</p>
+		<!-- YouTube: Text Input -->
+		<p>
+			<label for="<?php echo $this->get_field_id( 'youtube_link' ); ?>"><?php _e('YouTube:', 'finduson'); ?></label>
+			<input id="<?php echo $this->get_field_id( 'youtube_link' ); ?>" name="<?php echo $this->get_field_name( 'youtube_link' ); ?>" value="<?php echo $instance['youtube_link']; ?>" style="width:100%;" />
 		</p>
 
-		<!-- Sex: Select Box -->
-		<p>
-			<label for="<?php echo $this->get_field_id( 'sex' ); ?>"><?php _e('Sex:', 'example'); ?></label> 
-			<select id="<?php echo $this->get_field_id( 'sex' ); ?>" name="<?php echo $this->get_field_name( 'sex' ); ?>" class="widefat" style="width:100%;">
-				<option <?php if ( 'male' == $instance['format'] ) echo 'selected="selected"'; ?>>male</option>
-				<option <?php if ( 'female' == $instance['format'] ) echo 'selected="selected"'; ?>>female</option>
-			</select>
-		</p>
 
-		<!-- Show Sex? Checkbox -->
-		<p>
-			<input class="checkbox" type="checkbox" <?php checked( $instance['show_sex'], true ); ?> id="<?php echo $this->get_field_id( 'show_sex' ); ?>" name="<?php echo $this->get_field_name( 'show_sex' ); ?>" /> 
-			<label for="<?php echo $this->get_field_id( 'show_sex' ); ?>"><?php _e('Display sex publicly?', 'example'); ?></label>
-		</p>
 
 	<?php
 	}
