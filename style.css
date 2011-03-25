@@ -119,11 +119,12 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 }
 
 
+
 .has_right_bar #content {
 	margin: 0 auto;
 	width: 528px;
 	margin-right:0px;
-	background-color:green;
+/*	background-color:green; */
 	clear:left;
 	float:left;
 }
@@ -133,7 +134,7 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 	width: 200px;
 	float:right;
 	clear:right;
-	background-color:red;
+/*	background-color:red; */
 }
 
 
@@ -353,7 +354,7 @@ a:link {
 	color:#0066CC;
 }
 a:visited {
-	color:#743399;
+	color:#743399;header_iger_wide
 }
 a:active,
 a:hover {
@@ -1792,6 +1793,47 @@ padding-bottom: 15px;
 
 img#header_iger_wide
 {
-	width:	730px;
-	height:	257px;
+	width:	768px;
+	margin-left: -20px;
+	height:	271px;
 }
+
+#masthead {
+	position:relative;
+}
+
+a.nav_button {
+	display:block;
+	position:absolute;
+	background-image: url(images/top_nav_buttons.png);	
+}
+
+a.nav_button.contact_us {
+	background-position: -0px -0px;
+	width:154px;
+	height:43px;
+	top:206px;
+	left:387px;
+}
+
+a.nav_button.contact_us:hover,
+a.nav_button.contact_us:active {
+	background-position: -0px -50px;
+	
+}
+
+a.nav_button.blog {
+	background-position: -164px 0px;	
+	width:122px;
+	height:43px;
+	top:206px;
+	left:550px;
+	
+}
+
+a.nav_button.blog:hover,
+a.nav_button.blog:active {
+	background-position: -164px -50px;
+	
+}
+

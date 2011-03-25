@@ -107,6 +107,8 @@
 
 			<div style='clear:both;'></div>
 				<img id='header_iger_wide' src="<?php bloginfo('template_directory'); ?>/images/header_iger_wide.jpg" alt=''/>
+				<a href="/iger/contact-us" alt="" class='nav_button contact_us'></a>
+				<a href="/blog" alt="" class='nav_button blog'></a>
 				<div class='clear'></div>
 			</div><!-- #masthead -->
 
