@@ -205,6 +205,7 @@ endif;
 
 get_template_part('widgets');
 get_template_part('widget-finduson');
+get_template_part('widget-sponsors');
 
 
 /**

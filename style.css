@@ -122,7 +122,7 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 
 .has_right_bar #content {
 	margin: 0 auto;
-	width: 528px;
+	width: 500px;
 	margin-right:0px;
 /*	background-color:green; */
 	clear:left;
@@ -134,7 +134,8 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 	width: 200px;
 	float:right;
 	clear:right;
-/*	background-color:red; */
+	
+	background-color:red; 
 }
 
 
@@ -602,9 +603,11 @@ div.menu li {
 
 #main {
 	overflow: hidden; 
-	padding: 10px 0 0 0;
+	padding: 0 0 0 0;
+	width: 738px;
 }
 #content {
+	margin-top:10px;
 	margin-bottom: 36px;
 }
 #content,
