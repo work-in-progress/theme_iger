@@ -135,7 +135,6 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 	float:right;
 	clear:right;
 	
-	background-color:red; 
 }
 
 
@@ -1838,5 +1837,84 @@ a.nav_button.blog:hover,
 a.nav_button.blog:active {
 	background-position: -164px -50px;
 	
+}
+
+.column_menu ul.right_sidebar{
+	list-style-type:none;
+	width:200px;
+	padding:0px;
+	margin:0px;
+}
+
+.sponsors_inner_box {
+	width:188px;
+	border: solid 1px #d5d5d5;
+	padding: 5px;
+
+}
+
+span.sponsors_caption {
+		display:block;
+		color: #d5d5d5;
+		margin-bottom:4px;
+}
+
+
+
+h3.widget-title {
+	padding:5px;
+	width:188px;
+	background-color: #A49A77;
+	border: solid 1px #A49A77;
+	color: white;
+	font-size:14px;
+	font-weight:normal;
+	margin-bottom:2px;
+}
+
+.widget_fbw_likebox h3.widget-title {
+	background-color: #015089;
+	border: solid 1px #015089;
+	margin-bottom:10px;
+}
+
+.menu-primary-container {
+	padding:5px;
+	width:188px;
+	background-color: #F1EDE0;
+	border: solid 1px #D5D5D5;
+	color: white;
+	
+}
+
+.menu-primary-container ul  {
+	list-style-image: url(images/menu_item.png);
+}
+
+
+.menu-primary-container ul li {
+	padding-top: 3px;
+	padding-bottom:3px;	
+}
+
+.menu-primary-container ul li a {
+	text-decoration:none;
+	color: #666;
+	font-size:14px;
+}
+
+.menu-primary-container ul li a:hover,
+.menu-primary-container ul li a:active {
+	color: #333;	
+}
+
+.menu-primary-container ul li.current-menu-item a{
+	font-weight:bold;
+	color: #005088;
+}
+
+.menu-primary-container ul li.current-menu-item  a:hover,
+.menu-primary-container ul li.current-menu-item  a:active {
+	color: #005088;
 }
 

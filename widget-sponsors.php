@@ -79,6 +79,8 @@ class Sponsors_Widget extends WP_Widget {
 		
 		printf('<div class=\'sponsors_box\'><span class=\'sponsors_caption\'>' . $title . '</span>');
 		/* Display name from widget settings if one was input. */
+
+		printf('<div class=\'sponsors_inner_box\'>');
 		
 		$val = rand(0,3); /* Expects 4 inputs for now */
 		
@@ -94,7 +96,7 @@ class Sponsors_Widget extends WP_Widget {
 		if ( $sponsor_img_d &&  $sponsor_link_d && $val == 3)
 				printf( '<a id=\'sponsor_d\' href=\'%1$s\'  target=\'_blank\'><img src=\'%2$s\' alt=\'\'/></d>', $sponsor_link_d, $sponsor_img_d  );
 
-		
+		printf('</div>');
 
 		printf('</div>');
 		/* After widget (defined by themes). */
