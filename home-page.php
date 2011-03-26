@@ -1,14 +1,4 @@
-<style type="text/css" media="all"> 
-img.header_iger_wide_flag {
-	display:inline !important;
-}
-.header_iger_short_flag {
-	display:none;
-}
-a.navbutton {
-	display:block;
-}
-</style>
+
 
 <?php
 /**
@@ -24,7 +14,7 @@ a.navbutton {
  * @since IGER 1.0
  */
 
-
+$show_wide_header=true;
 
 get_header(); ?>
 
