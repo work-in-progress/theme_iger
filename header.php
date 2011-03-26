@@ -106,9 +106,10 @@
 		<div id="masthead">
 
 			<div style='clear:both;'></div>
-				<img id='header_iger_wide' src="<?php bloginfo('template_directory'); ?>/images/header_iger_wide.jpg" alt=''/>
-				<a href="/iger/contact-us" alt="" class='nav_button contact_us'></a>
-				<a href="/blog" alt="" class='nav_button blog'></a>
+			<img id='header_iger_wide' class='header_iger_wide_flag' src="<?php bloginfo('template_directory'); ?>/images/header_iger_wide.jpg" alt=''/>
+			<img id='header_iger_short' class='header_iger_short_flag' src="<?php bloginfo('template_directory'); ?>/images/header_iger_short.jpg" alt=''/>
+			<a href="/iger/contact-us" alt="" class='nav_button contact_us header_iger_wide_flag'></a>
+			<a href="/blog" alt="" class='nav_button blog header_iger_wide_flag'></a>
 				<div class='clear'></div>
 			</div><!-- #masthead -->
 

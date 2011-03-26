@@ -354,7 +354,7 @@ a:link {
 	color:#0066CC;
 }
 a:visited {
-	color:#743399;header_iger_wide
+	color:#743399;
 }
 a:active,
 a:hover {
@@ -1800,12 +1800,20 @@ img#header_iger_wide
 	height:	271px;
 }
 
+img#header_iger_short
+{
+	width:	768px;
+	margin-left: -20px;
+	height:	71px;
+}
+
+
 #masthead {
 	position:relative;
 }
 
 a.nav_button {
-	display:block;
+	display:none;
 	position:absolute;
 	background-image: url(images/top_nav_buttons.png);	
 }
@@ -1918,3 +1926,6 @@ h3.widget-title {
 	color: #005088;
 }
 
+.header_iger_wide_flag {
+	display:none;
+}

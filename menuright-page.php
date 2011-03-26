@@ -12,6 +12,9 @@
  * @since IGER 1.0
  */
 
+
+
+
 get_header(); ?>
 
 		<div id="container" class="has_right_bar">

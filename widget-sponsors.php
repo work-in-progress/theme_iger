@@ -88,13 +88,13 @@ class Sponsors_Widget extends WP_Widget {
 				printf( '<a id=\'sponsor_a\' href=\'%1$s\'  target=\'_blank\'><img src=\'%2$s\' alt=\'\'/></a>', $sponsor_link_a, $sponsor_img_a  );
 
 		if ( $sponsor_img_b &&  $sponsor_link_b && $val == 1)
-				printf( '<a id=\'sponsor_b\' href=\'%1$s\'  target=\'_blank\'><img src=\'%2$s\' alt=\'\'/></b>', $sponsor_link_b, $sponsor_img_b  );
+				printf( '<a id=\'sponsor_b\' href=\'%1$s\'  target=\'_blank\'><img src=\'%2$s\' alt=\'\'/></a>', $sponsor_link_b, $sponsor_img_b  );
 
 		if ( $sponsor_img_c &&  $sponsor_link_c && $val == 2)
-				printf( '<a id=\'sponsor_c\' href=\'%1$s\'  target=\'_blank\'><img src=\'%2$s\' alt=\'\'/></c>', $sponsor_link_c, $sponsor_img_c  );
+				printf( '<a id=\'sponsor_c\' href=\'%1$s\'  target=\'_blank\'><img src=\'%2$s\' alt=\'\'/></a>', $sponsor_link_c, $sponsor_img_c  );
 
 		if ( $sponsor_img_d &&  $sponsor_link_d && $val == 3)
-				printf( '<a id=\'sponsor_d\' href=\'%1$s\'  target=\'_blank\'><img src=\'%2$s\' alt=\'\'/></d>', $sponsor_link_d, $sponsor_img_d  );
+				printf( '<a id=\'sponsor_d\' href=\'%1$s\'  target=\'_blank\'><img src=\'%2$s\' alt=\'\'/></a>', $sponsor_link_d, $sponsor_img_d  );
 
 		printf('</div>');
 
