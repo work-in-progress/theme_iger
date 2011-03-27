@@ -84,15 +84,19 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 #content {
 	margin: 0 280px 0 20px;
 }
+
+/*
 #primary,
 #secondary {
 	float: right;
 	overflow: hidden;
 	width: 220px;
 }
-#secondary {
+#secondary {	
 	clear: right;
 }
+
+*/
 #footer {
 	clear: both;
 	width: 100%;
@@ -129,6 +133,8 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 	float:left;
 }
 
+#primary,
+#secondary,
 .has_right_bar .column_menu {
 	margin: 0;
 	width: 200px;
@@ -1698,11 +1704,11 @@ div.homepage hr
 
 #content hr.fat {
 	border:0;
-	height: 3px;
-	color:#EEE8D5;
-	background-color:#EEE8D5;
-	margin-top:40px !important;
-	margin-bottom:20px !important; 
+	height: 1px;
+	color:#d5d5d5;
+	background-color:#d5d5d5;
+	margin-top:30px !important;
+	margin-bottom:12px !important; 
 	display:block;
 	position:relative;
 }
@@ -1727,14 +1733,14 @@ div.homepage hr
     float:left;
     width: 200px;
     position:relative;
-    margin-right:35px;
+    margin-right:15px;
     margin-bottom:10px;
 }
 
 .homepage div.one-rightcolumn
 {
     float:left;
-    width: 480px;
+    width: 285px;
     position:relative;
     margin-bottom:10px;
 }
@@ -1895,34 +1901,42 @@ h3.widget-title {
 	
 }
 
-.menu-primary-container ul  {
+.menu-primary-container ul,
+.widget-area ul .menu-primary-container ul {
 	list-style-image: url(images/menu_item.png);
 }
 
 
-.menu-primary-container ul li {
+.menu-primary-container ul li ,
+.widget-area ul .menu-primary-container ul li{
 	padding-top: 3px;
 	padding-bottom:3px;	
 }
 
-.menu-primary-container ul li a {
+.menu-primary-container ul li a ,
+.widget-area ul .menu-primary-container ul a {
 	text-decoration:none;
 	color: #666;
 	font-size:14px;
 }
 
 .menu-primary-container ul li a:hover,
-.menu-primary-container ul li a:active {
+.menu-primary-container ul li a:active ,
+.widget-area ul .menu-primary-container ul  a:hover,
+.widget-area ul .menu-primary-container ul  a:active{
 	color: #333;	
 }
 
-.menu-primary-container ul li.current-menu-item a{
+.menu-primary-container ul li.current-menu-item a,
+.widget-area ul .menu-primary-container ul li.current-menu-item a{
 	font-weight:bold;
 	color: #005088;
 }
 
 .menu-primary-container ul li.current-menu-item  a:hover,
-.menu-primary-container ul li.current-menu-item  a:active {
+.menu-primary-container ul li.current-menu-item  a:active ,
+.widget-area ul .menu-primary-container ul li.current-menu-item a:hover,
+.widget-area ul .menu-primary-container ul li.current-menu-item a:active {
 	color: #005088;
 }
 
@@ -1971,6 +1985,7 @@ a.home_link {
 	float:right;
 	margin-top:40px;
 	margin-right:0px;
+	margin-bottom:10px;
 }
 
 .finduson_socialbox span {
