@@ -1934,3 +1934,47 @@ a.home_link {
 	top:45px;
 	left:138px;
 }
+
+.widget-container.widget_categoryposts ul {
+	list-style-type:none;
+	width:200px;
+	padding:0px;
+	margin:0px;
+	
+}
+
+.widget-container.widget_categoryposts ul li{
+	padding-top:5px;
+}
+.widget-container.widget_categoryposts ul li p {
+	margin-top:4px;
+}
+.widget-container.widget_categoryposts ul li a {
+	text-decoration:none  !important;
+	color: #005088  !important;
+}
+
+.widget-container.widget_categoryposts a.post-title {
+	font-weight:bold;
+}
+
+.widget-container.widget_categoryposts  ul li a.post-title {
+	color: #333 !important;
+}
+
+.widget-container.widget_categoryposts a:hover, 
+.widget-container.widget_categoryposts a:active {
+	text-decoration:underline !important;
+}
+
+.finduson_socialbox {
+	float:right;
+	margin-top:40px;
+	margin-right:0px;
+}
+
+.finduson_socialbox span {
+	margin-top:3px;
+}
+
+
