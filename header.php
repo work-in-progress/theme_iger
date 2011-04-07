@@ -105,22 +105,23 @@ global $show_wide_header;
 
 
 <div id="wrapper" class="hfeed">
-
+		<div id="premasthead">&nbsp;</div>
 		<div id="masthead">
 
 			<div style='clear:both;'></div>
+			
 			<?php 
 			if(isset($show_wide_header) && $show_wide_header) {		
 			?>
 			<img id='header_iger_wide' class='header_iger_wide_flag' src="<?php bloginfo('template_directory'); ?>/images/header_iger_wide.jpg" alt=''/>
-				<a href="/iger/course-info" alt="" class='nav_button contact_us header_iger_wide_flag'></a>
-				<a href="/blog" alt="" class='nav_button blog header_iger_wide_flag'></a>
+				<a href="/iger/course-info"  class='nav_button contact_us header_iger_wide_flag'></a>
+				<a href="/blog" class='nav_button blog header_iger_wide_flag'></a>
 
 			<?php 
 			} else {	
 			?>
 			<img id='header_iger_short' class='header_iger_short_flag' src="<?php bloginfo('template_directory'); ?>/images/header_iger_short.jpg" alt=''/>
-			<a href="/" alt="" class='home_link'></a>
+			<a href="/"  class='home_link'></a>
 
 			<?php 
 			}
@@ -130,3 +131,4 @@ global $show_wide_header;
 			</div><!-- #masthead -->
 
 	<div id="main">
+		<a name="skip_navigation"></a>

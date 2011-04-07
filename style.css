@@ -249,7 +249,7 @@ body {
 body,
 input,
 textarea {
-	color: #666;
+	color: #333;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -330,7 +330,7 @@ pre {
 }
 abbr,
 acronym {
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px dotted #333;
 	cursor: help;
 }
 
@@ -546,7 +546,7 @@ div.menu li {
 #access a {
 	display:block;
 	text-decoration:none;
-	color:#666;
+	color:#333;
 	padding:0 10px;
 	line-height:22px;
 }
@@ -629,7 +629,7 @@ div.menu li {
 #content pre,
 #content hr {
 	margin-bottom:24px;	
-	color: #666;	
+	color: #333;	
 }
 
 
@@ -753,7 +753,7 @@ div.menu li {
 }
 .entry-meta abbr:hover,
 .entry-utility abbr:hover {
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px dotted #333;
 }
 .entry-content,
 .entry-summary {
@@ -1387,7 +1387,7 @@ h3#reply-title {
 	font-style: italic;
 }
 #site-generator a {
-	color: #666;
+	color: #333;
 	display:inline-block;
 	text-decoration: none;
 	background: url(images/wordpress.png) center left no-repeat;
@@ -1699,7 +1699,7 @@ div.homepage hr
     margin:0px;
     font-size:14px;
     line-height:1.3em;
-    color:#666;
+    color:#333;
 }
 
 #content hr.fat {
@@ -1749,7 +1749,7 @@ div.homepage hr
 .homepage h4
 {
 
-    color:#555 !important;
+    color:#333 !important; /*#555 */
 }
 
 #content p.quote
@@ -1813,9 +1813,13 @@ img#header_iger_short
 	height:	71px;
 }
 
-
+#premasthead {
+	clear:both;
+	height:0px;
+}
 #masthead {
 	position:relative;
+	
 }
 
 a.nav_button {
@@ -1916,7 +1920,7 @@ h3.widget-title {
 .menu-primary-container ul li a ,
 .widget-area ul .menu-primary-container ul a {
 	text-decoration:none;
-	color: #666;
+	color: #333;
 	font-size:14px;
 }
 
@@ -1924,7 +1928,7 @@ h3.widget-title {
 .menu-primary-container ul li a:active ,
 .widget-area ul .menu-primary-container ul  a:hover,
 .widget-area ul .menu-primary-container ul  a:active{
-	color: #333;	
+	color: #005088;	
 }
 
 .menu-primary-container ul li.current-menu-item a,
